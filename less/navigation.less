@@ -1,1 +1,23 @@
 // Navigation Styles here
+nav {
+  display: flex;
+  flex-flow: row wrap;
+  width: 45%;
+  float: right;
+  justify-content: space-evenly;
+  margin-right: 5rem;
+  font-size: 1.7rem;
+  transform: translateY(-2.6rem);
+  @media @mobile {
+    margin-top: 5rem;
+    width: 100%;
+    margin-right: 0;
+  }
+  a {
+    text-decoration: none;
+    color: black;
+    &:hover {
+      color: gray;
+    }
+  }
+}
